@@ -1,7 +1,7 @@
 let num = prompt("digite um valor");
 
-const numb2 = 33;
-const numb3 = 11;
+const numb2 = positivo;
+const numb3 = negativo;
  
 if (num > 0){ console.log( "Positivo");}
 else if ( num < 0){console.log("negtivo");}
