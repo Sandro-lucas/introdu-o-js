@@ -1,13 +1,13 @@
-let num = prompt("digite um valor");
+const num = prompt("Digite sua idade")
+if (num < 0) { console.log("Você é  um feto ou infome uma idade valida"); }
+else if (num >= 0 && num < 18) { console.log("Menor de idade"); }
+else if (num >= 18 && num < 65) { console.log("Adulto"); }
+else { console.log("Idoso"); }
 
-const numb2 = positivo;
-const numb3 = negativo;
- 
-if (num > 0){ console.log( "Positivo");}
-else if ( num < 0){console.log("negtivo");}
-else if ( num == 0){console.log("nulo");}
 
-const num1 =prompt("digite ou valor")
 
-if (num1 >= 0 && num1 < 10) {return "numb2"}
-else if (num1 < 0 || num1 > 10) {return "numb3"} 
+
+
+
+
+
