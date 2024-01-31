@@ -1,0 +1,7 @@
+alert("Ola Mundo")
+alert(" Eu sou a Skaynet")
+alert(" vou dominar o mundo")
+alert("Mas você esta no meu caminho")
+alert("então")
+alert ("Vou te eliminar")
+alert("uhahahahaha")
