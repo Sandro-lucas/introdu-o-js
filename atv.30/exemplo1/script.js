@@ -1,37 +1,38 @@
-function soma(a, b) {
-  return a + b;
-}
-
-function subtracao(a, b) {
-  return a - b;
-}
-
-
-function multiplicacao(a, b) {
-  return a * b;
-}
-
-function divisao(a, b) {
-  return a / b;
-}
-
-
-function quadrado(numero) {
-  return numero * numero;
-}
-
-function cubo(numero) {
-  return numero * numero * numero;
-}
-
-function calcular() {
+function calcular(operacao) {
   const numeroA = parseFloat(document.getElementById("numeroA").value);
   const numeroB = parseFloat(document.getElementById("numeroB").value);
+  let num1 = numeroA + numeroB
+  let resultado;
 
-  document.getElementById("soma").innerHTML = "Soma: " + soma(numeroA, numeroB);
-  document.getElementById("subtracao").innerHTML = "Subtração: " + subtracao(numeroA, numeroB);
-  document.getElementById("multiplicacao").innerHTML = "Multiplicação: " + multiplicacao(numeroA, numeroB);
-  document.getElementById("divisao").innerHTML = "Divisão: " + divisao(numeroA, numeroB);
-  document.getElementById("quadrado").innerHTML = "Quadrado do número A: " + quadrado(numeroA);
-  document.getElementById("cubo").innerHTML = "Cubo do número B: " + cubo(numeroB);
+  switch (operacao) {
+    case 'soma':
+      resultado = numeroA + numeroB;
+      break;
+    case 'subtracao':
+      resultado = numeroA - numeroB;
+      break;
+    case 'multiplicacao':
+      resultado = numeroA * numeroB;
+      break;
+    case 'divisao':
+      resultado = numeroA / numeroB;
+      break;
+    case 'quadrado':
+      resultado = num1 * num1;
+      break;
+    case 'cubo':
+      resultado = num1 * num1 * num1;
+      break;
+    case 'med':
+      resultado = num1 / 2;
+      break;
+    default:
+      resultado = "Operação inválida";
+  }
+
+  document.getElementById("result").innerHTML = "Resultado: " + resultado;
 }
+
+
+
+

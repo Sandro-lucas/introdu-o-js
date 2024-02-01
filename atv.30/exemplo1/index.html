@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
@@ -12,22 +12,24 @@
     <form>
         <label for="numeroA">Número A:</label>
         <input type="text" id="numeroA" name="numeroA">
-
+        <br>
         <label for="numeroB">Número B:</label>
         <input type="text" id="numeroB" name="numeroB">
+        <br>
 
-        <button type="button" onclick="calcular()">Calcular</button>
+        <button type="button" onclick="calcular('soma')">Soma</button><br>
+        <button type="button" onclick="calcular('subtracao')">Subtração</button><br>
+        <button type="button" onclick="calcular('multiplicacao')">Multiplicação</button><br>
+        <button type="button" onclick="calcular('divisao')">Divisão</button><br>
+        <button type="button" onclick="calcular('quadrado')">Quadrado</button><br>
+        <button type="button" onclick="calcular('cubo')">Cubo</button><br>
+        <button type="button" onclick="calcular('med')">Media</button><br>
 
         <h2>Resultados:</h2>
-        <p id="soma"></p>
-        <div id="subtracao"></div>
-        <div id="multiplicacao"></div>
-        <div id="divisao"></div>
-        <div id="quadrado"></div>
-        <div id="cubo"></div>
+        <p id="result"></p>
+
     </form>
-    <script src="../exemplo1/script.js">
-    </script>
+    <script src="../exemplo1/script.js"></script>
 </body>
 
 </html>
