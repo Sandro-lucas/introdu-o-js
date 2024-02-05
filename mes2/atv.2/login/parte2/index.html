@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <!-- Container principal -->
+    <div class="a">
+        <!-- Container de conteúdo -->
+        <div class="c">
+            <h1>Matemática</h1>
+            <!-- Formulário para inserção de números e botões de operação -->
+            <form>
+                <p>
+                    <label for="numeroA">Número A:</label>
+                    <input type="text" id="numeroA" name="numeroA">
+                </p>
+                <p>
+                    <label for="numeroB">Número B:</label>
+                    <input type="text" id="numeroB" name="numeroB">
+                </p>
+
+                <!-- Botões de operação -->
+                <button type="button" onclick="calcular('soma')">Soma</button>
+                <button type="button" onclick="calcular('subtracao')">Subtração</button>
+                <button type="button" onclick="calcular('multiplicacao')">Multiplicação</button>
+                <button type="button" onclick="calcular('divisao')">Divisão</button>
+                <button type="button" onclick="calcular('quadrado')">Quadrado</button>
+                <button type="button" onclick="calcular('cubo')">Cubo</button>
+                <button type="button" onclick="calcular('med')">Média</button>
+                <button type="button" onclick="calcular('comp')">Comparação</button>
+
+                <!-- Resultado -->
+                <h2>Resultado:</h2>
+                <h2 id="resulte"></h2>
+            </form>
+        </div>
+    </div>
+    <!-- Inclusão do arquivo JavaScript -->
+    <script src="../parte2/script.js"></script>
+</body>
+
+</html>
