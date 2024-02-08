@@ -2,24 +2,34 @@
 <html lang="pt-BR">
 
 <head>
+    <!-- Configurações da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Compras</title>
+    <!-- Link para o arquivo de estilos CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <center>
+        <!-- Título da página -->
         <h1>Calculadora de Compras</h1><br>
-        <div class="form-uiu"><br><br>
-            <label for="exemplo1">Exemplo digite um dia da Semana (0 a 6, sendo 0 segunda-feira, 6 sábado):</label>
+        <!-- Seção para o primeiro exemplo -->
+        <div class="form-uiu">
+            <br><br>
+            <!-- Entrada para digitar o dia da semana -->
+            <label for="exemplo1">Exemplo: Digite um dia da semana (0 a 6, sendo 0 segunda-feira, 6 sábado):</label>
             <input type="number" id="exemplo1" min="0" max="6" required><br><br>
+            <!-- Botão para calcular o exemplo -->
             <button type="button" onclick="testar()">Calcular</button>
+            <!-- Div para exibir o resultado do exemplo -->
             <div id="exemplo"></div>
         </div>
-        <div class="form-ui"><br><br>
-            
+        <!-- Seção para o formulário de compra -->
+        <div class="form-ui">
+            <br><br>
             <form id="compraForm">
+                <!-- Entradas para os detalhes da compra -->
                 <label for="nomeCliente">Nome do Cliente:</label>
                 <input type="text" id="nomeCliente" required><br><br>
                 <label for="quantidadeCarne">Quantidade de Carne (em kg):</label>
@@ -28,12 +38,14 @@
                 <input type="number" id="precoCarne" step="0.01" required><br><br>
                 <label for="diaSemana">Dia da Semana (0 a 6, sendo 0 segunda-feira, 6 sábado):</label>
                 <input type="number" id="diaSemana" min="0" max="6" required><br><br>
+                <!-- Botão para calcular a compra -->
                 <button type="button" onclick="calcularCompra()">Calcular</button>
             </form>
-
+            <!-- Div para exibir o resultado da compra -->
             <div id="resultado"></div>
         </div>
     </center>
+    <!-- Script JavaScript -->
     <script src="../açougue/script.js"></script>
 </body>
 

@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vida Ativa</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo de estilos CSS -->
 </head>
 
 <body>
-    <img src="../academia/logo.png" alt="">
+    <img src="../academia/logo.png" alt=""> <!-- Logo da academia -->
     <header>
-        <h1>Seja bem-vindo à academia Vida Ativa</h1>
+        <h1>Seja bem-vindo à academia Vida Ativa</h1> <!-- Título principal da página -->
     </header>
     <div class="container">
         <div class="content">
             <div class="form-ui">
+                <!-- Descrição do propósito do site e explicação do cálculo do IMC -->
                 <h2>
                     <p>Esse site tem como propósito definir se seu peso corresponde à sua altura. <br>
                         Vamos usar de exemplo Maria pesa 55 kg e mede 1,65 m e Pedro pesa 70 kg e mede 1,80 m. <br>
@@ -35,28 +36,28 @@
                 </h2>
             </div>
         </div>
-        <div class="form-ui"><center>
+        <div class="form-ui"><center> <!-- Formulário para calcular o IMC -->
             <h1>calcule o IMC</h1>
             <form>
                 <p> <label for="peso">
                         <h2>Peso em Kg:</h2>
                     </label>
-                    <input type="number" id="peso" name="peso">
+                    <input type="number" id="peso" name="peso"> <!-- Entrada para o peso em kg -->
                 </p>
                 <p>
                     <label for="altura">
                         <h2>Altura em Metros:</h2>
                     </label>
-                    <input type="number" id="altura" name="altura">
+                    <input type="number" id="altura" name="altura"> <!-- Entrada para a altura em metros -->
                 </p>
-                <button type="button" onclick="calcular()">Comparação</button>
+                <button type="button" onclick="calcular()">Comparação</button> <!-- Botão para calcular -->
             </form>
 
-            <h2 id="resulte"></h2>
+            <h2 id="resulte"></h2> <!-- Local para exibir o resultado do cálculo -->
         </center>
         </div>
     </div>
-    <script src="../academia/script.js"></script>
+    <script src="../academia/script.js"></script> <!-- Link para o arquivo de script JavaScript -->
 </body>
 
 </html>
