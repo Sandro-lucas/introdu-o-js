@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Velocidade Média</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <Span class="a1">
+    <h1>Calculadora de Velocidade Média</h1>
+    <div id="form-ui"><br><br><br>
+        <center>
+            <label for="rota"><span class="a1">Escolha a rota:</span></label>
+            <select id="rota">
+                <option value="SP-RJ">São Paulo - Rio de Janeiro (400 km)</option>
+                <option value="RJ-BH">Rio de Janeiro - Belo Horizonte (500 km)</option>
+                <option value="BH-BSB">Belo Horizonte - Brasília (700 km)</option>
+                <option value="BSB-SA">Brasília - Salvador (1000 km)</option>
+            </select><br><br>
+
+            <button onclick="calcularVelocidadeMedia()">Calcular Velocidade Média</button>
+
+            <div id="resultado"></div>
+        </center>
+    </div>
+    <script src="../viagem/script.js"></script>
+</body>
+
+</html>
