@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida Ativa</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo de estilos CSS -->
+</head>
+
+<body>
+    <img src="../academia/logo.png" alt=""> <!-- Logo da academia -->
+    <header>
+        <h1>Seja bem vindo ao Site da TechCity.</h1> <!-- Título principal da página -->
+    </header>
+    <div class="container">
+        <div class="content">
+            <p> <br>
+            <div class="form-ui">
+                <!-- Descrição do propósito do site e explicação do cálculo do IMC -->
+                <h2>
+
+                    </p>
+                    <p>O objetivo do site é calcular o seu desconto<br>
+                        com base nos sequintes criterios</p>
+                    <p>.Se o valor total da compra for iqual ou superior a R$ 3000,00. Vocé ganha 10% de desconto.<br>
+                        .Se o valor total da compra for iqual ou superior a R$ 2500,00 é menor que 3000. Vocé ganha 5%
+                        de desconto.<br>
+                        .Se o valor total da compra for menor do que R$ 2500,00. O valor da compra não se alteram.
+                    </p>
+                   <p> como exemplo: <br>
+                .Lucas tem o valor total da compra = R$2500.00, com desconto fica R$2375.00 <br>
+                .Leida tem o valor total da compra = R$5250.00, com desconto fica R$4725.00<br>
+                .Daniel tem o valor total da compra = R$4725.00, com desconto fica R$4252.50
+            </div>
+        </div>
+        <div class="form-ui">
+            <br><br>
+            <center> <!-- Formulário para calcular o IMC -->
+                <h1>calculadora de compra</h1>
+                <form>
+                    <label for="nomeCliente">
+                        <h2>Nome do Cliente:</h2>
+                    </label>
+                    <input type="text" id="nomeCliente" required>
+                    <p> <label for="peso">
+                            <h2>Valor da compra</h2>
+                        </label>
+                        <input type="number" id="peso" name="peso"> <!-- Entrada para o peso em kg -->
+                    </p>
+
+
+                    <button type="button" onclick="calcular()">Calcular</button> <!-- Botão para calcular -->
+                </form>
+
+                <h2 id="resulte"></h2> <!-- Local para exibir o resultado do cálculo -->
+            </center>
+        </div>
+    </div>
+    <script src="../questao-6-sandro/script.js"></script> <!-- Link para o arquivo de script JavaScript -->
+</body>
+
+</html>

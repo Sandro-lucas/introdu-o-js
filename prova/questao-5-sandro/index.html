@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros Velozes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><center>
+    <h1>Carros Velozes</h1>
+    <div id="form-ui" >
+    <form id="compraForm">
+        <h1>Calculadora de Preços</h1>
+        <!-- Entradas para os detalhes da compra -->
+        <label for="nomeCliente">Nome do Cliente:</label>
+        <input type="text" id="nomeCliente" required><br><br>
+       
+        <label for="precoCarne">Preço do veiculo (em R$):</label>
+        <input type="number" id="precoCarne" step="0.01" required><br><br>
+        <label for="diaSemana">Forma de pagamento digite:<br>1 para finaciamento<br>2 para consócio<br>3 para pagamento à vista:</label><br><br>
+        <input type="number" id="diaSemana" min="1" max="3" required><br><br>
+        <!-- Botão para calcular a compra -->
+        <button type="button" onclick="calcularCompra()">Calcular</button>
+    </form>
+    <!-- Div para exibir o resultado da compra -->
+    <div id="resultado"></div>
+
+    <script src="../questao-5-sandro/script.js"></script>
+</div>
+</center>
+</body>
+</html>

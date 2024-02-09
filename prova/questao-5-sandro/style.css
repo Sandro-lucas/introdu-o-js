@@ -1,0 +1,23 @@
+#form-ui {
+    background-color: #eb4a00;
+    margin-top: 10%;
+    height: 500px;
+    width: 570px;
+    border: 0px solid;
+    padding: 10px;
+    box-shadow: 5px 11px 10px #fffb0075;
+    border-radius: 40px;
+    color: #ffffff
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #022b3b;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #f0f0f0;
+}
