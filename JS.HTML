@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de JavaScript</title>
+</head>
+<body>
+  <h1 id="titulo">Título</h1>
+  <p id="paragrafo">Este é um parágrafo.</p>
+
+  <script>
+    // Coloque o código JavaScript aqui
+    let nome = "João";
+    const PI = 3.14159;
+    
+    console.log("Olá, " + nome + "!");
+    
+    let raio = 5;
+    let area = PI * raio ** 2;
+    console.log("A área do círculo é: " + area);
+    
+    if (area > 50) {
+      console.log("A área é maior do que 50.");
+    } else {
+      console.log("A área é menor ou igual a 50.");
+    }
+    
+    let diaSemana = "quinta";
+    switch (diaSemana) {
+      case "segunda":
+      case "terça":
+      case "quarta":
+      case "quinta":
+      case "sexta":
+        console.log("É dia útil.");
+        break;
+      case "sábado":
+      case "domingo":
+        console.log("É fim de semana.");
+        break;
+      default:
+        console.log("Dia inválido.");
+    }
+    
+    function calcularCircunferencia(raio) {
+      return 2 * PI * raio;
+    }
+    
+    let circunferencia = calcularCircunferencia(raio);
+    console.log("A circunferência do círculo é: " + circunferencia);
+    
+    let numeros = [1, 2, 3, 4, 5];
+    console.log("O primeiro número do array é: " + numeros[0]);
+    
+    console.log("Imprimindo números do array:");
+    for (let i = 0; i < numeros.length; i++) {
+      console.log(numeros[i]);
+    }
+    
+    let pessoa = {
+      nome: "Maria",
+      idade: 30,
+      profissao: "engenheira"
+    };
+    
+    console.log("Nome: " + pessoa.nome);
+    console.log("Idade: " + pessoa.idade);
+    console.log("Profissão: " + pessoa.profissao);
+    
+    document.getElementById("titulo").innerHTML = "Exemplo de JavaScript";
+    document.getElementById("paragrafo").innerHTML = "Este é um parágrafo alterado pelo JavaScript.";
+  </script>
+</body>
+</html>
